@@ -94,12 +94,12 @@ def prediction():
 
         if prediction[0] == 1:
 
-            result = "🌊 Flood Likely"
+            result = "Flood Likely"
             result_class = "danger"
 
         else:
 
-            result = "✅ No Flood Likely"
+            result = "No Flood Likely"
             result_class = "safe"
 
         # ==========================
