@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flood Prediction</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<!-- ================= Navigation ================= -->
+
+<nav>
+
+    <div class="logo">
+
+        Floods Prediction
+
+    </div>
+
+    <ul>
+
+        <li><a href="/">Home</a></li>
+
+        <li><a href="/predict" class="active">Predict Floods</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- ================= Prediction Section ================= -->
+
+<section class="prediction-page">
+
+    <div class="prediction-overlay">
+
+        <div class="prediction-card">
+
+            <h1>Flood Prediction</h1>
+
+            <p class="subtitle">
+
+                Enter the weather information below to predict
+                whether flooding is likely to occur.
+
+            </p>
+
+            <form action="/prediction" method="POST">
+
+                <div class="form-grid">
+
+                    <div class="input-box">
+
+                        <label>🌡 Temperature</label>
+
+                        <input type="number"
+                               step="any"
+                               name="temp"
+                               placeholder="Enter Temperature"
+                               required>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>💧 Humidity</label>
+
+                        <input type="number"
+                               step="any"
+                               name="humidity"
+                               placeholder="Enter Humidity"
+                               required>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>☁ Cloud Cover</label>
+
+                        <input type="number"
+                               step="any"
+                               name="cloud"
+                               placeholder="Enter Cloud Cover"
+                               required>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>🌧 Annual Rainfall</label>
+
+                        <input type="number"
+                               step="any"
+                               name="annual"
+                               placeholder="Enter Annual Rainfall"
+                               required>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Jan-Feb Rainfall</label>
+
+                        <input type="number"
+                               step="any"
+                               name="janfeb"
+                               placeholder="Jan-Feb Rainfall"
+                               required>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Mar-May Rainfall</label>
+
+                        <input type="number"
+                               step="any"
+                               name="marmay"
+                               placeholder="Mar-May Rainfall"
+                               required>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Jun-Sep Rainfall</label>
+
+                        <input type="number"
+                               step="any"
+                               name="junsep"
+                               placeholder="Jun-Sep Rainfall"
+                               required>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Oct-Dec Rainfall</label>
+
+                        <input type="number"
+                               step="any"
+                               name="octdec"
+                               placeholder="Oct-Dec Rainfall"
+                               required>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Average June Rainfall</label>
+
+                        <input type="number"
+                               step="any"
+                               name="avgjune"
+                               placeholder="Average June Rainfall"
+                               required>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Subdivision Rainfall</label>
+
+                        <input type="number"
+                               step="any"
+                               name="sub"
+                               placeholder="Subdivision Rainfall"
+                               required>
+
+                    </div>
+
+                </div>
+
+                <button type="submit" class="predict-btn">
+
+                    Predict Flood
+
+                </button>
+
+            </form>
+
+            {% if prediction %}
+
+            <div class="result-card {{ result_class }}">
+
+                <h2>Prediction Result</h2>
+
+                <h1>{{ prediction }}</h1>
+
+                <a href="/predict" class="again-btn">
+
+                    Predict Again
+
+                </a>
+
+            </div>
+
+            {% endif %}
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+
+</html>
