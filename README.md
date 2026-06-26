@@ -18,6 +18,8 @@ The project covers the complete machine learning workflow, including data prepro
 
 ---
 
+**Note:** This application is deployed on Render's free tier. If the application has been inactive for some time, the first request may take 30–60 seconds while the server starts. Subsequent requests will be much faster.
+
 ## Features
 
 - Predicts the likelihood of flood occurrence
