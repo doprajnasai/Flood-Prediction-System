@@ -132,6 +132,7 @@ The application predicts one of the following results:
 
 ## Project Structure
 
+
 Flood-Prediction-System/
 │
 ├── app.py
@@ -166,6 +167,8 @@ Flood-Prediction-System/
     ├── flood.png
     └── noflood.png
 
+
+
 ---
 
 ## Installation
@@ -173,7 +176,7 @@ Flood-Prediction-System/
 ### Clone the repository
 
 
-git clone https://github.com/YOUR_USERNAME/Flood-Prediction-System.git
+git clone https://github.com/doprajnasai/Flood-Prediction-System.git
 
 
 ### Navigate to the project directory
@@ -219,13 +222,6 @@ Open your browser and visit:
 
 http://127.0.0.1:5000
 
-
----
-
-
-### Prediction Page
-
-![Prediction Page](screenshots/predict.png)
 
 ---
 
