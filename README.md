@@ -160,14 +160,9 @@ Flood-Prediction-System/
 │       └── flood.jpg
 │
 ├── templates/
-│   ├── index.html
-│   └── predict.html
-│
-└── screenshots/
-    ├── home.png
-    ├── predict.png
-    ├── flood.png
-    └── noflood.png
+    ├── index.html
+    └── predict.html
+
 ```
 
 
