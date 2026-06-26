@@ -1,175 +1,256 @@
-# 🌊 Flood Prediction System
+# Flood Prediction System
 
-A Machine Learning based web application that predicts the possibility of floods using historical weather and rainfall data.
+## Overview
 
----
+The Flood Prediction System is a Machine Learning-based web application developed using Python, Flask, and XGBoost. It predicts the likelihood of flooding based on historical weather and rainfall parameters entered by the user.
 
-##  Project Overview
-
-Floods are among the most devastating natural disasters. Early prediction can help authorities and citizens take preventive measures.
-
-This project uses Machine Learning to analyze weather parameters and predict whether flooding is likely to occur.
-
-The application is built using **Python**, **Flask**, and **XGBoost** and provides a simple web interface where users can enter weather information and receive an instant prediction.
+The project covers the complete machine learning workflow, including data preprocessing, exploratory data analysis, feature engineering, model training, model evaluation, and deployment through a Flask web application.
 
 ---
 
-#  Features
+## Live Demo
 
-- 🌡 Temperature Prediction Input
-- 💧 Humidity Input
-- ☁ Cloud Cover Input
-- 🌧 Rainfall Analysis
-- 🤖 Machine Learning Prediction
-- ⚡ Instant Results
-- 🎨 Professional Flask Web Interface
-- 📱 Responsive Design
+**Deployed Application**
 
----
+https://flood-prediction-system-3fv8.onrender.com
 
-# Machine Learning
+**GitHub Repository**
 
-The following Machine Learning algorithms were implemented and compared:
-
-- Decision Tree
-- Random Forest
-- K-Nearest Neighbors (KNN)
-- XGBoost (Best Performing Model)
-
-The final deployed model is **XGBoost**.
+https://github.com/doprajnasai/Flood-Prediction-System
 
 ---
 
-# Technologies Used
+## Features
 
-- Python
-- Flask
-- Pandas
-- NumPy
-- Scikit-learn
-- XGBoost
-- Joblib
-- HTML
-- CSS
-- JavaScript (Basic)
+- Predicts the likelihood of flood occurrence
+- User-friendly Flask web interface
+- Real-time prediction using Machine Learning
+- Input validation for all weather parameters
+- Responsive and modern web design
+- XGBoost model integration
+- Trained model loaded using Joblib
 
 ---
 
-# Project Structure
+## Machine Learning Workflow
 
-```text
-Flood-Prediction-System/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-├── dataset/
-├── notebooks/
-├── saved_models/
-├── static/
-│   ├── css/
-│   └── images/
-└── templates/
-```
+The project follows the complete machine learning pipeline:
 
----
-
-# ⚙ Installation
-
-Clone the repository
-
-```bash
-git clone <repository-link>
-```
-
-Move into the project folder
-
-```bash
-cd Flood-Prediction-System
-```
-
-Create a virtual environment
-
-```bash
-python -m venv venv
-```
-
-Activate the virtual environment
-
-Windows
-
-```bash
-venv\Scripts\activate
-```
-
-Install required libraries
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the Flask application
-
-```bash
-python app.py
-```
-
-Open the browser
-
-```text
-http://127.0.0.1:5000
-```
+1. Data Collection
+2. Data Preprocessing
+3. Exploratory Data Analysis (EDA)
+4. Outlier Detection and Capping
+5. Feature Engineering
+6. Train-Test Split
+7. Feature Scaling using StandardScaler
+8. Model Training
+9. Model Evaluation
+10. Model Selection
+11. Model Deployment
 
 ---
 
-# Input Features
+## Machine Learning Models Used
 
-The model uses the following 10 features:
+The following models were trained and evaluated:
 
-1. Temperature
-2. Humidity
-3. Cloud Cover
-4. Annual Rainfall
-5. Jan-Feb Rainfall
-6. Mar-May Rainfall
-7. Jun-Sep Rainfall
-8. Oct-Dec Rainfall
-9. Average June Rainfall
-10. Subdivision Rainfall
+| Model | Purpose |
+|--------|----------|
+| Decision Tree | Classification |
+| Random Forest | Classification |
+| K-Nearest Neighbors (KNN) | Classification |
+| XGBoost | Final Deployed Model |
+
+After evaluating all models, **XGBoost** was selected as the final model due to its superior predictive performance.
 
 ---
 
-# Prediction Output
+## Input Features
 
-The application predicts one of the following:
+The prediction model uses the following weather parameters:
+
+| Feature |
+|----------|
+| Temperature |
+| Humidity |
+| Cloud Cover |
+| Annual Rainfall |
+| Jan-Feb Rainfall |
+| Mar-May Rainfall |
+| Jun-Sep Rainfall |
+| Oct-Dec Rainfall |
+| Average June Rainfall |
+| Subdivision Rainfall |
+
+---
+
+## Prediction Output
+
+The application predicts one of the following results:
 
 - Flood Likely
 - No Flood Likely
 
 ---
 
+## Technologies Used
 
-# Future Improvements
+### Programming Language
 
-- Live Weather API Integration
-- Interactive Maps
-- Rainfall Visualization
-- Location-based Prediction
-- Deep Learning Models
-- Mobile Application
+- Python
+
+### Machine Learning
+
+- Scikit-learn
+- XGBoost
+- Joblib
+
+### Data Analysis
+
+- Pandas
+- NumPy
+
+### Data Visualization
+
+- Matplotlib
+- Seaborn
+
+### Web Framework
+
+- Flask
+
+### Frontend
+
+- HTML
+- CSS
+
+### Deployment
+
+- Render
 
 ---
 
-# Developer
+## Project Structure
 
-**Name:** Doprajna Sai Vadlamudi
+Flood-Prediction-System/
+│
+├── app.py
+├── Procfile
+├── requirements.txt
+├── README.md
+├── .gitignore
+│
+├── dataset/
+│   └── flood_dataset.xlsx
+│
+├── notebooks/
+│   └── Flood_Prediction.ipynb
+│
+├── saved_models/
+│   ├── flood_model.joblib
+│   └── scaler.joblib
+│
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   └── images/
+│       └── flood.jpg
+│
+├── templates/
+│   ├── index.html
+│   └── predict.html
+│
+└── screenshots/
+    ├── home.png
+    ├── predict.png
+    ├── flood.png
+    └── noflood.png
 
-B.Tech CSE
+---
+
+## Installation
+
+### Clone the repository
+
+
+git clone https://github.com/YOUR_USERNAME/Flood-Prediction-System.git
+
+
+### Navigate to the project directory
+
+
+cd Flood-Prediction-System
+
+
+### Create a virtual environment
+
+
+python -m venv venv
+
+
+### Activate the virtual environment
+
+#### Windows
+
+
+venv\Scripts\activate
+
+
+#### Linux / macOS
+
+
+source venv/bin/activate
+
+
+### Install dependencies
+
+
+pip install -r requirements.txt
+
+
+### Run the Flask application
+
+
+python app.py
+
+
+Open your browser and visit:
+
+
+http://127.0.0.1:5000
+
+
+---
+
+
+### Prediction Page
+
+![Prediction Page](screenshots/predict.png)
+
+---
+
+
+## Future Enhancements
+
+- Integration with live weather APIs
+- Location-based flood prediction
+- Interactive flood risk maps
+- Rainfall trend visualization
+- Deep Learning implementation
+- Mobile application support
+
+---
+
+## Developer
+
+**Doprajna Sai Vadlamudi**
+
+B.Tech Computer Science and Engineering
 
 SRM University AP
 
 ---
 
-# License
+## License
 
-This project is developed for educational purposes.
+This project is developed for educational and academic purposes only.
