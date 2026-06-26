@@ -8,15 +8,13 @@ The project covers the complete machine learning workflow, including data prepro
 
 ---
 
+
 ## Live Demo
 
-**Deployed Application**
-
-https://flood-prediction-system-3fv8.onrender.com
-
-**GitHub Repository**
-
-https://github.com/doprajnasai/Flood-Prediction-System
+| Resource | Link |
+|----------|------|
+| **Live Website** | https://flood-prediction-system-3fv8.onrender.com |
+| **GitHub Repository** | https://github.com/doprajnasai/Flood-Prediction-System |
 
 ---
 
@@ -133,6 +131,9 @@ The application predicts one of the following results:
 ## Project Structure
 
 
+## Project Structure
+
+```text
 Flood-Prediction-System/
 │
 ├── app.py
@@ -154,6 +155,7 @@ Flood-Prediction-System/
 ├── static/
 │   ├── css/
 │   │   └── style.css
+│   │
 │   └── images/
 │       └── flood.jpg
 │
@@ -166,7 +168,7 @@ Flood-Prediction-System/
     ├── predict.png
     ├── flood.png
     └── noflood.png
-
+```
 
 
 ---
