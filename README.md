@@ -237,15 +237,7 @@ http://127.0.0.1:5000
 - Deep Learning implementation
 - Mobile application support
 
----
 
-## Developer
-
-**Doprajna Sai Vadlamudi**
-
-B.Tech Computer Science and Engineering
-
-SRM University AP
 
 ---
 
